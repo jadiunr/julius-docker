@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  julius:
+    build: .
+    volumes:
+      - ".:/julius"
+    devices:
+      - "/dev/snd:/dev/snd"
+    stdin_open: true
+    tty: true
